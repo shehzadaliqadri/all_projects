@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Here</title>
+    <script
+      src="https://kit.fontawesome.com/c42ed3031b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="create-post">
+      <div class="heading">
+        <h3>create post</h3>
+      </div>
+      <div class="post">
+        <div class="user">
+          <!-- profile image -->
+          <img
+            src="images/profile_pic.webp"
+            alt="profile image"
+            width="40px"
+            height="40px"
+            class="user-image"
+          />
+          <p>Shehzad Qadri</p>
+        </div>
+        <div class="textBox1">
+          <textarea
+            placeholder="What's on your mind?"
+            id="textArea1"
+          ></textarea>
+        </div>
+        <div class="bg-images">
+          <div onclick="changeBG();" class="default">Aa</div>
+          <div class="hidden" onclick="changeBG();" class="default">Aa</div>
+
+          <div class="hidden" id="img4" onclick="bgPut(id)">
+            <img src="images/img4.jpg" alt="bg img" />
+          </div>
+          <div class="hidden" id="img5" onclick="bgPut(id)">
+            <img src="images/img5.jpg" alt="bg img" />
+            <a href="abc.com"></a>
+          </div>
+          <div class="hidden" id="img8" onclick="bgPut(id)">
+            <img src="images/img8.jpg" alt="bg img" />
+          </div>
+          <i
+            onclick="closeBG()"
+            id="close-btn"
+            class="close hidden fa-solid fa-xmark"
+          ></i>
+        </div>
+        <button onclick="postingInpValue()" class="post-btn">Post</button>
+        <p id="error-message"></p>
+      </div>
+    </div>
+
+    <div id="main"></div>
+
+    <script src="appHome.js"></script>
+  </body>
+</html>
+
+<!-- <div class="hidden" id="img1" oncl(id)">
+            <img src="img1.jpg" alt="bg img" />
+          </div>
+          <div class="hidden" id="img2" onclick="bgPut(id)">
+            <img src="img2.jpg" alt="bg img" />
+          </div>
+          <div class="hidden" id="img3" onclick="bgPut(id)">
+            <img src="img3.jpg" alt="bg img" />
+          </div>
+          <div class="hidden" id="img6" onclick="bgPut(id)">
+            <img src="img6.jpg" alt="bg img" />
+          </div>
+          <div class="hidden" id="img7" onclick="bgPut(id)">
+            <img src="img7.jpg" alt="bg img" />
+          </div>
+        -->

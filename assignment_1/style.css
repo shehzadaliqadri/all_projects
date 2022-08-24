@@ -1,0 +1,11 @@
+ul li {
+    display: inline;
+
+    font-size: larger;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+
+}  

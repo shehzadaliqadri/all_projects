@@ -1,0 +1,11 @@
+body {
+    background-color: grey;
+}
+ul li {
+    list-style: none;
+    margin-left: 5px;
+}
+
+button {
+    display: inline;
+}

@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* tr > td {
+    background-color: magenta;
+} */
+
+.main {
+    text-align: center;
+    font-family: sans-serif;
+}
+img {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* chess */
+
+.black{
+    background-color: black;
+    width: 55px;
+    height: 55px;
+    border: 2px;
+    border-color: brown;
+}
+
+.white {
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border: 2px;
+    border-color: brown;
+}
+
+.chess {
+    background-color: ghostwhite;
+} 
+
+.sd1 {
+    background-color: magenta;
+    height: 10px;
+    width: 10px;
+}
+
+.sd2 {
+    background-color: khaki;
+    height: 10px;
+    width: 10px;
+}
+.sd3 {
+    background-color: burlywood;
+    width: 10px;
+    height: 10px;
+}
+
+.sd4 {
+    background-color: red;
+    width: 10px;
+    height: 10px;    
+}

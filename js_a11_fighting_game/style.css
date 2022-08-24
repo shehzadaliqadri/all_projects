@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+.main{
+    background-image: url("images/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    width: auto;
+    /* position: relative; */
+
+}
+.image{
+    position: relative;
+
+}
+img {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 50px;
+    height: 250px;
+    animation: player1 1s;

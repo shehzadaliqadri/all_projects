@@ -1,0 +1,146 @@
+/* @font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppin/Poppins-Regular.ttf);
+} */
+
+*{
+    text-align: center;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.create-post {
+    background-color: #242526;
+    width: 540px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    margin: 0;
+    user-select: none;
+ }
+
+.user-image {
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#textArea1 {
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    min-height: 100px;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    font-family: Poppins;
+    background-position: center;
+    background-size: cover;
+}
+
+#textArea1::placeholder {
+    color: rgb(185, 178, 178);
+}
+
+#textArea1:focus {
+    border: none;
+    outline: none;
+}
+
+.hidden img {
+    height: 50px;
+    width: 50px;
+}
+
+.hidden {
+    display: none !important;
+    transition: 1s;
+}
+
+
+.user-image {
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.name-sec {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 10px 0;
+    width: 100%;
+}
+
+.name {
+    cursor: pointer;
+}
+
+.bg-images  {
+display: flex;
+margin: 0 0 20px 0 ;}
+
+
+.bg-images>div {
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+
+#default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/default_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: chartreuse;
+}
+
+#img4, #img5, #img8 {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid white;
+
+}
+
+.close {
+    margin-left: auto;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.post-btn {
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    background-color: #2374e1;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}

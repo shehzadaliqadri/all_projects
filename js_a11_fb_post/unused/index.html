@@ -1,0 +1,120 @@
+`<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Post-App</title>
+    <script
+      src="https://kit.fontawesome.com/c42ed3031b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="create-post">
+      <div class="heading">
+        <h3>Create post</h3>
+      </div>
+      <div class="posts">
+        <div class="section-name">
+          <img
+            src="images/profile_pic.webp"
+            alt="profile pic"
+            width="40px"
+            height="40px"
+            class="user-image"
+          />
+
+
+
+
+          <p class="userName">Shehzad Qadri</p>
+          <div class="textbox-b1">
+            <textarea placeholder="What's in your mind"></textarea>
+          </div>
+          <div class="bg-images">
+            <div id="default" onclick="bgSelect()"></div>
+            <div id="img1" class="hidden" onclick="bgImageChange(id)"><img src="images/img1.jpg" width="100%" height="100%" alt=""></div>
+            <div id="img2" class="hidden" onclick="bgImageChange(id)"><img src="images/img2.jpg" width="100%" height="100%" alt=""></div>
+            <div id="img3" class="hidden" onclick="bgImageChange(id)"><img src="images/img3.jpg" width="100%" height="100%" alt=""></div>
+            <div id="img4" class="hidden" onclick="bgImageChange(id)"><img src="images/img4.jpg" width="100%" height="100%" alt=""></div>
+            <div id="img5" class="hidden" onclick="bgImageChange(id)"><img src="images/img5.jpg" width="100%" height="100%" alt=""></div>
+            <div id="img6" class="hidden" onclick="bgImageChange(id)"><img src="images/img6.jpg" width="100%" height="100%" alt=""></div>
+            <div id="img7" class="hidden" onclick="bgImageChange(id)"><img src="images/img7.jpg" width="100%" height="100%" alt=""></div>
+          </div>
+          <i onclick="closeBg()" id="close-btn" class="close hidden fa-solid fa-xmark"></i>
+        </div>
+        <button onclick="postingInputValue()" class="post-btn">Post</button>
+        <p id="error-message"></p>
+      </div>
+    </d==+iv>
+    <div id="main"></div>
+
+  </body>
+  <script src="app.js"></script>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-App</title>
+    <script src="https://kit.fontawesome.com/c42ed3031b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="create-post">
+        <div class="heading">
+            <h3>Create post</h3>
+        </div>
+        <div class="posting">
+            <div class="name-sec">
+                <img 
+                class="user-image" 
+                width="40px" 
+                height="40px" 
+                src="images/Portfolio_Pic.jpg">
+                
+                <p class="name">Ìtz Ébad</p>
+            </div>
+            <div id="textArea-box1">
+              <textarea placeholder="What's on your mind, Ìtz?" id="textArea1"></textarea>
+            </div>
+            
+            
+            <div class="bg-images">
+              <div onclick="changeBg()" id="dft">Aa</div>
+                <div class="hidden" id="img1" onclick="putBgImageInInput(id)"><img width="100%" height="100%"
+                        src="images/img1.jpg" alt=""></div>
+                <div class="hidden" id="img2" onclick="putBgImageInInput(id)"><img width="100%" height="100%"
+                        src="images/img2.jpg" alt=""></div>
+                <div class="hidden" id="img3" onclick="putBgImageInInput(id)"><img width="100%" height="100%"
+                        src="images/img3.jpg" alt=""></div>
+                <div class="hidden" id="img4" onclick="putBgImageInInput(id)"><img width="100%" height="100%"
+                        src="images/img4.jpg" alt=""></div>
+                <div class="hidden" id="img5" onclick="putBgImageInInput(id)"><img width="100%" height="100%"
+                        src="images/img5.jpg" alt=""></div>
+                <div class="hidden" id="img6" onclick="putBgImageInInput(id)"><img width="100%" height="100%"
+                        src="images/img6.jpg" alt=""></div>
+                <div class="hidden" id="img7" onclick="putBgImageInInput(id)"><img width="100%" height="100%"
+                        src="images/img7.jpg" alt=""></div>
+                <div class="hidden" id="img8" onclick="putBgImageInInput(id)"><img width="100%" height="100%"
+                        src="images/img8.jpg" alt=""></div>
+                <i onclick="closeBg()" id="close-btn" class="close hidden fa-solid fa-xmark"></i>
+            </div>
+            <button onclick="postingInpValue()" class="post-btn">Post</button>
+            <p id="error-message"></p>
+        </div>
+    </div>
+    <div id="main"></div>
+</body>
+<script src="app.js"></script>
+
+</html> -->

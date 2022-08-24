@@ -1,0 +1,32 @@
+.main {
+    background-image: url("images/ramadan_kareem.jpg");
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roza {
+    color: lightcoral
+}
+
+h2 {
+    background-color: blueviolet;
+    padding: 0px 100px;
+    margin: 0px 50px;
+}
+h3 {
+    background-color: violet;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    margin: 0px 50px;
+}
+
+.namaz {
+    font-weight: bold;
+    color: brown;
+}
