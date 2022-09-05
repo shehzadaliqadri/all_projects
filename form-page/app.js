@@ -1,10 +1,9 @@
-var names = document.getElementById("name");
-var fname = document.getElementById("fathername");
-var valuess = document.getElementById("tableData");
+var names = document.getElementById("name"),
+  fname = document.getElementById("fathername"),
+  valLocal = document.getElementById("tableData"),
+  values = localStorage.getItem("data");
 var dataList = [];
-var valLocal = document.getElementById("tableData");
 
-var values = localStorage.getItem("data");
 if (values) {
   dataList = JSON.parse(values);
   document.getElementById(
@@ -91,6 +90,7 @@ function update(i) {
     dataList[i].namess = document.getElementById("unique1").value;
     dataList[i].father_name = document.getElementById("unique2").value;
     localStorage.setItem("data", JSON.stringify(dataList));
-    loadValues();
+     loadValues();
   }
 }
+
