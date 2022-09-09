@@ -48,6 +48,10 @@ function deleteAll() {
     <td colspan="4">No entry to show. Please Put New Data</td>
   `;
   localStorage.removeItem("data");
+  setTimeout(() => {
+    loadValues();
+    window.reload;
+  }, 5000);
 }
 
 function deleteOne(i) {
@@ -90,7 +94,6 @@ function update(i) {
     dataList[i].namess = document.getElementById("unique1").value;
     dataList[i].father_name = document.getElementById("unique2").value;
     localStorage.setItem("data", JSON.stringify(dataList));
-     loadValues();
+    loadValues();
   }
 }
-
