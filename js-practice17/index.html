@@ -9,64 +9,100 @@
   </head>
   <body>
     <div id="main">
-      <form id="mainForm">
-        <div class="form_element">
-          <span
-            ><label for="city">City Name:</label>
-            <select name="city" id="city" class="input">
-              <option value="none" selected disabled>Select City</option>
-              <option value="khi">Karachi</option>
-              <option value="lhr">Lahore</option>
-              <option value="isb">Islamabad</option>
-              <option value="pwr">Peshawar</option>
-            </select>
-          </span>
-        </div>
-        <div class="form_element">
-          <span>
-            <label for="course">Course Name:</label>
-            <select name="course" id="course" class="input">
-              <option value="none" selected disabled>Select Course:</option>
-              <option value="webMob">Web & Mobile App Dev.</option>
-              <option value="graphic">Graphic Designing.</option>
-              <option value="mobileRepair">Mobile Repairing.</option>
-              <option value="officeAutomate">Office Automation.</option>
-            </select>
-          </span>
-        </div>
-        <div class="form_element">
-          <label for="fName">Name:</label>
-          <input
-            type="text"
-            id="fName"
-            class="input"
-            placeholder="Enter your Name: e.g abc"
-          />
-        </div>
-        <div class="form_element">
-          <label for="fatherName">Name:</label>
-          <input
-            type="text"
-            id="fatherName"
-            class="input"
-            placeholder="Enter Your Father Name."
-          />
-        </div>
-        <div class="form_element">
-          <label for="email">Email:</label>
-          <input
-            class="input"
-            type="email"
-            class="input"
-            placeholder="Enter Email Here. abc@gmail.com"
-          />
-        </div>
-        <div class="form_element">
-          <label for="course">Phone:</label>
-          <input type="number" placeholder="+923331122334" class="input" />
-        </div>
-        <button onclick="saveData();">submit</button>
-      </form>
+        <form id="mainForm">
+            <div class="form_element">
+            <span
+              ><label for="city">City Name:</label>
+              <select name="city" onblur="checkField()" id="city" class="input">
+                <option value="none"  selected disabled>Select City</option>
+                <option value="khi">Karachi</option>
+                <option value="lhr">Lahore</option>
+                <option value="isb">Islamabad</option>
+                <option value="pwr">Peshawar</option>
+              </select>
+            </span>
+          </div>
+          <div class="form_element">
+            <span>
+              <label for="course">Course Name:</label>
+              <select name="course" onblur="checkField()" id="course" class="input">
+                <option value="none" selected disabled>Select Course:</option>
+                <option value="webMob">Web & Mobile App Dev.</option>
+                <option value="graphic">Graphic Designing.</option>
+                <option value="mobileRepair">Mobile Repairing.</option>
+                <option value="officeAutomate">Office Automation.</option>
+              </select>
+            </span>
+          </div>
+          <div class="form_element">
+            <label for="names">Name:</label>
+            <input
+              type="text"
+              id="names"
+              class="input"
+              onblur="checkField()"
+              placeholder="Enter your Name: e.g abc"
+            />
+          </div>
+          <div class="form_element">
+            <label for="fatherName">Father Name:</label>
+            <input
+              type="text"
+              id="fatherName"
+              class="input"
+              onblur="checkField()"
+              placeholder="Enter Your Father Name."
+            />
+          </div>
+          <div class="form_element">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              class="input"
+              onblur="checkField()"
+              placeholder="Enter Email Here. abc@gmail.com"
+            />
+          </div>
+          <div class="form_element">
+            <label for="phn">Phone:</label>
+            <input
+              type="number"
+              id="phn"
+              class="input"
+              onblur="checkField()"
+              placeholder="+923331122334"
+            />
+          </div>
+          <div class="form_element">
+            <label for="male">Male</label><br />
+            <input 
+            type="radio" 
+            onblur="checkField()" 
+            id="male"
+            name="gender" 
+            value="male" />
+            
+            <label for="css">Female</label><br />
+            <input 
+            type="radio"
+            onblur="checkField()" 
+            id="female"
+            name="gender"
+            value="female" />
+          </div>
+          <div class="form_element">
+            <label for="file">Images:</label>
+            <input 
+            type="file"
+            id="file" 
+            onblur="checkField()" 
+            placeholder="URL" 
+            class="input" />
+          </div>
+          <button onclick="saveData();">submit</button>
+        </form>
+      </legend>
 
       <!-- <div> 
             <h2>Iphone X</h2>
