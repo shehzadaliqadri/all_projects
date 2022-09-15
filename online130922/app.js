@@ -90,10 +90,6 @@ const getData = new Promise((resolve, reject) => {
 
 console.log(getData);
 
-// var xyz =``
-// function newFunc() {
-
-// }
 var newData = document.getElementById("main");
 async function abc() {
   try {
@@ -109,39 +105,10 @@ async function abc() {
     console.log(err);
   }
 }
-// console.log(abc());
-// console.log(data);
 
 abc();
 
-// data get using longitude
-// const options = {
-//   enableHighAccuracy: true,
-//   timeout: 5000,
-//   maximumAge: 0,
-// };
-
-// function success(pos) {
-//   const crd = pos.coords;
-//   console.log("Your current position is:");
-//   console.log(`Latitude : ${crd.latitude}`);
-//   console.log(`Longitude: ${crd.longitude}`);
-//   console.log(`More or less ${crd.accuracy} meters.`);
-//   //   return [crd.latitude, crd, longitude, crd.accuracy];
-// }
-
-// function error(err) {
-//   console.warn(`ERROR(${err.code}): ${err.message}`);
-// }
-
-// navigator.geolocation.getCurrentPosition(success, error, options);
-
-// console.log(
-//   navigator.geolocation.getCurrentPosition((data) =>
-//     console.log(data.coords.latitude)
-//   )
-// );
-
+// data fetch using geo location
 var userPosition = {
   lat: "",
   lon: "",
@@ -151,8 +118,6 @@ if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function (position) {
     userPosition.lat = position.coords.latitude;
     userPosition.lon = position.coords.longitude;
-    // console.log(userPosition.lat); //This shows me the latitude
-    // Displaylat_lng(userPosition.lat, userPosition.lon);
 
     const apiKey = "01a6250d5a536471d12b2de166943c32";
 
@@ -164,15 +129,7 @@ if (navigator.geolocation) {
         .then((res) => resolve(res))
         .catch((err) => reject(err));
     });
-    // console.log(
-    //   `https://api.openweathermap.org/data/2.5/weather?lat=${userPosition.lat}&lon=${userPosition.lon}&appid=${apiKey}`
-    // );
-    // console.log(getDataGeo);
 
-    // var xyz =``
-    // function newFunc() {
-
-    // }
     var newData2 = document.getElementById("main2");
     async function abc2() {
       try {
@@ -192,35 +149,3 @@ if (navigator.geolocation) {
     abc2();
   });
 }
-
-// function Displaylat_lng(lat, lng) {
-//   console.log("Lat ==> " + lat + " lng ==> " + lng);
-// }
-
-// function initGeolocation() {
-//   if (navigator.geolocation) {
-//     // Call getCurrentPosition with success and failure callbacks
-//     navigator.geolocation.getCurrentPosition(success, fail);
-//   } else {
-//     alert("Sorry, your browser does not support geolocation services.");
-//   }
-// }
-// console.log(initGeolocation());
-
-// function success(position){
-//          document.getElementById('long').value = position.coords.longitude;
-//          document.getElementBy
-
-// setTimeout(function foo() {
-//   return navigator.geolocation.getCurrentPosition(function fn(data1) {
-//     return data1.coords.latitude;
-//   });
-// }, 3000);
-
-// console.log(foo());
-
-// var newData = foo("address", function (location) {
-//   alert(location); // this is where you get the return value
-// });
-
-// console.log(newData);
